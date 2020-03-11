@@ -1,0 +1,9 @@
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #c3c3c3;
+  user-select: none;
+}
+
+.active-tab {
+  border-bottom: 2px solid teal;
+}
