@@ -8,7 +8,7 @@ export interface ErrorViewerProps {
 }
 
 export function ErrorViewer({error}: ErrorViewerProps) {
-    return <div className={root}>
+    return error && <div className={root}>
         <h3>ERROR</h3>
         <pre>{JSON.stringify(error, null, 2)}</pre>
     </div>;

@@ -31,7 +31,7 @@ export function GithubUserHooks() {
     const {user, search, error, updateSearch} = useUserViewer();
     return <div>
         <h1>Hooks viewer</h1>
-        {error && <ErrorViewer error={error}/>}
+        <ErrorViewer error={error}/>
         <GithubUserViewer search={search} updateSearch={updateSearch} user={user}/>
     </div>;
 }

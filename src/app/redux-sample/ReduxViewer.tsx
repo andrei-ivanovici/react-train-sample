@@ -24,7 +24,7 @@ export  type ReduxViewerProps = ReduxViewerInputs & ReduxViewerOutputs;
 export function ReduxViewerComponent({search, updateSearch, user, error}: ReduxViewerProps) {
     return <div>
         <h1>Redux Viewer</h1>
-        {error && <ErrorViewer error={error}/>}
+        <ErrorViewer error={error}/>
         <GithubUserViewer search={search} updateSearch={updateSearch} user={user}/>
     </div>;
 }
